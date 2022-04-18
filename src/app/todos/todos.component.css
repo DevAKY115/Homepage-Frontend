@@ -1,0 +1,25 @@
+.table-wrapper{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+table {
+/*  border-radius: 8px;*/
+  width: 75%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.80);     /*transparent background color*/
+}
+
+button {
+/*  margin-left: 12.5%;*/
+}
+.tableDiv{
+  height: 80%;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+
+}

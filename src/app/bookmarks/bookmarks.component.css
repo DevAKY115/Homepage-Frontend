@@ -1,0 +1,43 @@
+.bookmarks-wrapper{
+  height: 100%;
+  width: 100%;
+}
+
+.bookmark-content{
+  display: flex;
+  margin: auto;
+  height: 70%;
+  width: 75%;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bookmark-tile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0, 0.75);
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.bookmark-tile img {
+  width: 40px;
+  height: 40px;
+}
+
+.bookmark-tile p {
+  max-width: 100%;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}

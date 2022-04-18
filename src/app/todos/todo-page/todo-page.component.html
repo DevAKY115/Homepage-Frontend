@@ -1,0 +1,18 @@
+<div class="form-wrapper">
+  <form>
+    <fieldset class="form-group">
+      <label for="todoDescription" class="form-label">Description</label>
+      <input type="text" id="todoDescription" name="description" class="form-control" [(ngModel)]="currentTodo.description">
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label for="todoDate" class="form-label">Target date</label>
+      <input type="date" id="todoDate" name="targetDate" class="form-control" [ngModel]="currentTodo.targetDate | date:'yyyy-MM-dd'" (ngModelChange)="currentTodo.targetDate = $event">
+    </fieldset>
+
+    <fieldset class="form-group">
+      <button class="btn btn-primary" (click)="saveTodo()">Save</button>
+      <button class="btn btn-danger" (click)="deleteTodo()">Delete</button>
+    </fieldset>
+  </form>
+</div>

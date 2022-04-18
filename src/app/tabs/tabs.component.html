@@ -1,0 +1,34 @@
+<div class="tabs justify-content-center">
+
+  <a routerLink="/bookmarks">
+    <div class="tab" (mouseenter)="toggle('Bookmark')" (mouseleave)="toggle('Bookmark')">
+        <div [@hoverOver]="onHoverBookmark ? 'hover' : 'noHover'" class="tab-tile" id="bookmarksTile">
+          <img src="assets/icons/bookmark.svg">
+        </div>
+    </div>
+  </a>
+  <a routerLink="/todos">
+    <div class="tab" (mouseenter)="toggle('Todo')" (mouseleave)="toggle('Todo')">
+      <div [@hoverOver]="onHoverTodo ? 'hover' : 'noHover'" class="tab-tile" id="todosTile">
+        <img src="assets/icons/todo.svg">
+      </div>
+    </div>
+  </a>
+
+<!--  <a routerLink="/pwManager">
+    <div class="tab" (mouseenter)="toggle('Notes')" (mouseleave)="toggle('Notes')">
+      <div [@hoverOver]="onHoverNotes ? 'hover' : 'noHover'" class="tab-tile" id="notesTile">
+        <img src="assets/icons/PWIcon.svg">
+      </div>
+    </div>
+  </a>-->
+
+  <a routerLink="/twitter">
+    <div class="tab" (mouseenter)="toggle('Twitter')" (mouseleave)="toggle('Twitter')">
+      <div [@hoverOver]="onHoverTwitter ? 'hover' : 'noHover'" class="tab-tile" id="twitterTile">
+        <img src="../../assets/icons/TwitterIcon.svg">
+      </div>
+    </div>
+  </a>
+
+</div>

@@ -1,0 +1,33 @@
+.tabs{
+  display: flex;
+  padding: 10px;
+  margin: 12px;
+  background-color: rgba(40, 40, 40, 0.25);     /*transparent background color*/
+  backdrop-filter: blur(3px);                   /*blurs the image behind the div*/
+  border-radius: 12px;                          /*rounds the edges*/
+  gap: 14px;                                    /*gaps between the child elements*/
+}
+.tab-tile{
+  padding: 12px;
+  border-radius: 10px;
+}
+
+#bookmarksTile{
+  background: linear-gradient(55deg, #CCFFFF, #FFCCCC);
+}
+
+#todosTile{
+  background: linear-gradient(0deg, #aafffa, #eeccff);
+}
+
+#notesTile{
+  background: linear-gradient(90deg, #71b7ff, #ffccff);
+}
+
+#twitterTile{
+  background: linear-gradient(55deg, #CCFFFF, #FFCCCC);
+}
+
+.tab-tile img{
+  display: flex;
+}

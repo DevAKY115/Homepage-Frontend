@@ -1,0 +1,25 @@
+<div class="table-wrapper" *ngIf="isDataAvailable">
+  <div class="tableDiv">
+  <table class="table table-light table-hover">
+    <thead class="">
+      <tr>
+        <th>#</th>
+        <th>Todo</th>
+        <th>Target date</th>
+      </tr>
+    </thead>
+    <tbody class="">
+
+    <tr *ngFor="let todo of todoList">
+      <td>{{todo.id}}</td>
+      <td>{{todo.description}}</td>
+      <td>{{todo.targetDate | date:'dd. MMM YYYY'}}</td>
+      <td><button class="btn btn-warning" (click)="updateById(todo.id)">Update</button></td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="buttons">
+    <button class="btn" (click)="addTodo()">New Todo</button>
+  </div>
+</div>

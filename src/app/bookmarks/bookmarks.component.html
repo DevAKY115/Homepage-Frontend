@@ -1,0 +1,21 @@
+<ng-container class="bookmarks-wrapper" *ngIf="isDataAvailable">
+
+  <div class="bookmark-content">
+
+    <div *ngFor="let bookmark of bookmarksList">
+      <a href="{{bookmark.url}}">
+        <div class="bookmark-tile">
+          <img src="{{bookmark.ico}}" alt="">
+          <p>{{bookmark.name}}</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="buttons">
+    <button class="btn" (click)="addBookmark()">Add Bookmark</button>
+    <button class="btn" (click)="manageBookmark()">Manage Bookmarks</button>
+  </div>
+
+</ng-container>

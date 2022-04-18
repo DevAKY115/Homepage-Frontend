@@ -1,0 +1,16 @@
+.form-wrapper{
+  height: 100%;
+  width: 100%;
+}
+
+form{
+  padding: 20px;
+  width: 75%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.80);     /*transparent background color*/
+  border-radius: 10px;
+}
+
+button {
+  margin-right: 1rem;
+}

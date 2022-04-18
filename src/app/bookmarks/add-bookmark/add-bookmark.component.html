@@ -1,0 +1,18 @@
+<div class="form-wrapper">
+
+  <form>
+    <fieldset class="form-group">
+      <label for="bookmarkName" class="form-label">Bookmark name</label>
+      <input type="text" id="bookmarkName" name="bookmarkName" class="form-control" [(ngModel)]="currentBookmark.name">
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label for="bookmarkURL" class="form-label">Bookmark URL</label>
+      <input type="text" id="bookmarkURL" name="bookmarkURL" class="form-control" #url>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <button class="btn btn-primary" (click)="saveBookmark(url.value)">Save</button>
+    </fieldset>
+  </form>
+</div>

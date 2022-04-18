@@ -1,0 +1,21 @@
+<div class="table-wrapper" *ngIf="isDataAvailable">
+  <div class="tableDiv">
+    <table class="table table-light table-hover">
+      <thead class="">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>URL</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let bookmark of bookmarkList">
+        <td>{{bookmark.id}}</td>
+        <td>{{bookmark.name}}</td>
+        <td>{{bookmark.url}}</td>
+        <td><button class="btn btn-danger" (click)="deleteBookmark(bookmark.id)">Delete</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
