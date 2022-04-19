@@ -28,6 +28,12 @@
   background: linear-gradient(55deg, #CCFFFF, #FFCCCC);
 }
 
+#japaneseTile{
+  background: linear-gradient(45deg, #aafffa, #eeccff);
+}
+
 .tab-tile img{
   display: flex;
+  height: 24px;
+  width: 24px;
 }

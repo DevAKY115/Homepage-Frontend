@@ -15,6 +15,7 @@ import {FormsModule} from "@angular/forms";
 import { AddBookmarkComponent } from './bookmarks/add-bookmark/add-bookmark.component';
 import { ManageBookmarksComponent } from './bookmarks/manage-bookmarks/manage-bookmarks.component';
 import { TwitterComponent } from './twitter/twitter.component';
+import { VocabsComponent } from './vocabs/vocabs.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TwitterComponent } from './twitter/twitter.component';
     TodoPageComponent,
     AddBookmarkComponent,
     ManageBookmarksComponent,
-    TwitterComponent
+    TwitterComponent,
+    VocabsComponent
   ],
     imports: [
         BrowserModule,

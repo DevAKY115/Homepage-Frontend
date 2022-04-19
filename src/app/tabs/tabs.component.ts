@@ -28,6 +28,7 @@ export class TabsComponent implements OnInit {
   onHoverTodo : boolean = false;
   onHoverNotes : boolean = false;
   onHoverTwitter : boolean = false;
+  onHoverJapanese : boolean = false;
 
 
 
@@ -44,6 +45,9 @@ export class TabsComponent implements OnInit {
         break;
       case 'Twitter':
         this.onHoverTwitter = !this.onHoverTwitter;
+        break;
+      case 'Japanese':
+        this.onHoverJapanese = !this.onHoverJapanese;
         break;
       default:
         break;
