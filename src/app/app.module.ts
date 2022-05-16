@@ -15,7 +15,11 @@ import {FormsModule} from "@angular/forms";
 import { AddBookmarkComponent } from './bookmarks/add-bookmark/add-bookmark.component';
 import { ManageBookmarksComponent } from './bookmarks/manage-bookmarks/manage-bookmarks.component';
 import { TwitterComponent } from './twitter/twitter.component';
-import { VocabsComponent } from './vocabs/vocabs.component';
+import { VocabsComponent } from './japanese/vocabs/vocabs.component';
+import { HiraganaComponent } from './japanese/hiragana/hiragana.component';
+import { MenuComponent } from './japanese/menu/menu.component';
+import { KatakanaComponent } from './japanese/katakana/katakana.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,14 +33,18 @@ import { VocabsComponent } from './vocabs/vocabs.component';
     AddBookmarkComponent,
     ManageBookmarksComponent,
     TwitterComponent,
-    VocabsComponent
+    VocabsComponent,
+    HiraganaComponent,
+    MenuComponent,
+    KatakanaComponent
   ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
+        NgbModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="romaji-container">
+    <p>{{romajiText}}</p>
+  </div>
+
+  <div class="katakana-container">
+
+    <div class="katakana">
+      <a (click)="checkAnswer(roundArray[0])"><img src="assets/japanese/katakana/katakana_{{roundArray[0]}}.png"></a>
+    </div>
+
+    <div class="katakana">
+      <a (click)="checkAnswer(roundArray[1])"><img src="assets/japanese/katakana/katakana_{{roundArray[1]}}.png"></a>
+    </div>
+
+    <div class="katakana">
+      <a (click)="checkAnswer(roundArray[2])"><img src="assets/japanese/katakana/katakana_{{roundArray[2]}}.png"></a>
+    </div>
+
+    <div class="katakana">
+      <a (click)="checkAnswer(roundArray[3])"><img src="assets/japanese/katakana/katakana_{{roundArray[3]}}.png"></a>
+    </div>
+
+    <div class="katakana">
+      <a (click)="checkAnswer(roundArray[4])"><img src="assets/japanese/katakana/katakana_{{roundArray[4]}}.png"></a>
+    </div>
+
+  </div>
+
+  <div class="score">
+    <p>{{previousResult}}</p>
+    <p>{{score}}/46</p>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.menu-wrapper{
+  height: 100%;
+  width: 100%;
+}
+
+.menu-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  gap: 50px;
+}
+
+.menu-item{
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  line-height: 50px;      /*has to be the same as height so the text is centered*/
+  text-align: center;
+}
+
+/*
+.menu-item{
+  background-color: rgba(255, 255, 255, 0.50);
+  height: 100px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/

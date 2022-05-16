@@ -1,0 +1,35 @@
+<div class="container" *ngIf="dataAvailable">
+
+  <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+    <button type="button" class="btn btn-outline-dark me-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Chapter</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownManual">
+      <a href="/japanese/vocabs/1"><button ngbDropdownItem>Chapter 1</button></a>
+      <a href="/japanese/vocabs/2"><button ngbDropdownItem>Chapter 2</button></a>
+      <a href="/japanese/vocabs/3"><button ngbDropdownItem>Chapter 3</button></a>
+      <a href="/japanese/vocabs/4"><button ngbDropdownItem>Chapter 4</button></a>
+    </div>
+  </div>
+
+  <div class="japaneseText">
+    {{currentVocab.japanese}}
+  </div>
+
+  <div class="translatedText">
+      <input type="text" placeholder="What does '{{currentVocab.japanese}}' mean" [(ngModel)]="translatedText" (keydown.enter)="checkTranslation()">
+      <button class="btn btn-primary" (click)="checkTranslation()">Check</button>
+  </div>
+
+  <p>{{result}}</p>
+
+  <div class="postCheck">
+    <div class="buttons" *ngIf="checkedVocab != undefined">
+      <button class="btn btn-primary" (click)="next()" (keydown.space)="next()">Next</button>
+      <button class="btn btn-dark" (click)="addTranslation()">Add translation</button>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <label for="vocabList">Add vocab list</label>
+    <input type="file" (change)="saveList($event)" id="vocabList" [ngModel]="filePath">
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="romaji-container">
+    <p>{{romajiText}}</p>
+  </div>
+
+  <div class="hiragana-container">
+
+    <div class="hiragana">
+      <a (click)="checkAnswer(roundArray[0])"><img src="assets/japanese/hiragana/hiragana-{{roundArray[0]}}.svg"></a>
+    </div>
+
+    <div class="hiragana">
+      <a (click)="checkAnswer(roundArray[1])"><img src="assets/japanese/hiragana/hiragana-{{roundArray[1]}}.svg"></a>
+    </div>
+
+    <div class="hiragana">
+      <a (click)="checkAnswer(roundArray[2])"><img src="assets/japanese/hiragana/hiragana-{{roundArray[2]}}.svg"></a>
+    </div>
+
+    <div class="hiragana">
+      <a (click)="checkAnswer(roundArray[3])"><img src="assets/japanese/hiragana/hiragana-{{roundArray[3]}}.svg"></a>
+    </div>
+
+    <div class="hiragana">
+      <a (click)="checkAnswer(roundArray[4])"><img src="assets/japanese/hiragana/hiragana-{{roundArray[4]}}.svg"></a>
+    </div>
+
+  </div>
+
+  <div class="score">
+    <p>{{previousResult}}</p>
+    <p>{{score}}/46</p>
+  </div>
+</div>
