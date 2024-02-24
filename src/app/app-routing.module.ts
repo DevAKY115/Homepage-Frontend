@@ -11,6 +11,7 @@ import {VocabsComponent} from "./japanese/vocabs/vocabs.component";
 import {HiraganaComponent} from "./japanese/hiragana/hiragana.component";
 import {MenuComponent} from "./japanese/menu/menu.component";
 import {KatakanaComponent} from "./japanese/katakana/katakana.component";
+import {ItemListComponent} from "./item-list/item-list.component";
 
 const routes: Routes = [
   {path: "", component: BookmarksComponent},
@@ -26,7 +27,9 @@ const routes: Routes = [
   {path: "japanese/vocabs", component: VocabsComponent},
   {path: "japanese/vocabs/:chapter", component: VocabsComponent},
   {path: "japanese/hiragana", component: HiraganaComponent},
-  {path: "japanese/katakana", component: KatakanaComponent}
+  {path: "japanese/katakana", component: KatakanaComponent},
+  {path: "itemlist", component: ItemListComponent},
+  {path: "itemlist/:id", component: ItemListComponent}
 
 ];
 
