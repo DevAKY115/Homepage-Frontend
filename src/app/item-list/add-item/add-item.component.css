@@ -1,0 +1,31 @@
+.form-wrapper{
+  width: 75%;
+  background: rgba(0,0,0, 0.85);
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  border-radius: 10px;
+
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  width: 100%;
+
+}
+
+.left-side{
+  width: 50%;
+}
+.right-side{
+  width: 50%;
+}
+
+.button-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

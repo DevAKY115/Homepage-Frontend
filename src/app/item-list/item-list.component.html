@@ -1,21 +1,28 @@
-<table class="table table-light table-hover">
-  <thead class="">
-  <tr>
-    <th>Itemname</th>
-    <th>Price</th>
-    <th>Treshold</th>
-    <th>Group</th>
-    <th>Website</th>
-    <th></th>
-  </tr>
+<div class="content-wrapper">
+  <table class="table table-light table-hover">
+    <thead class="">
+    <tr>
+      <th>Itemname</th>
+      <th>Price</th>
+      <th>Treshold</th>
+      <th>Group</th>
+      <th>Website</th>
+      <th></th>
+    </tr>
 
-  <tr *ngFor="let item of itemList" [ngClass]="{'table-success': item.belowThreshold}">
-    <td>{{item.name}}</td>
-    <td>{{item.price}}€</td>
-    <td>{{item.threshold}}€</td>
-    <td>{{item.group}}</td>
-    <td>{{item.website}}</td>
-    <td><button type="button" class="btn btn-secondary" (click)="addItem()">Edit</button></td>
-  </tr>
-  </thead>
-</table>
+    <tr *ngFor="let item of itemList" [ngClass]="{'table-success': item.belowThreshold}">
+      <td>{{item.name}}</td>
+      <td>{{item.price}}€</td>
+      <td>{{item.threshold}}€</td>
+      <td>{{item.productGroup}}</td>
+      <td>{{item.website}}</td>
+      <td><button type="button" class="btn btn-secondary" (click)="editItem(item.id)">Edit</button></td>
+    </tr>
+    </thead>
+  </table>
+
+  <div class="button-wrapper">
+    <button class="btn btn-primary" (click)="addItem()">Add Item</button>
+    <button class="btn btn-primary" (click)="updatePrices()">Update Prices</button>
+  </div>
+</div>

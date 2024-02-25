@@ -1,0 +1,47 @@
+<div class="form-wrapper">
+
+  <form>
+    <div class="left-side">
+
+      <fieldset class="form-group">
+        <label for="url" class="form-label">Please enter URL</label>
+        <input type="text" id="url" name="url" class="form-control" [(ngModel)]="currentItem.url">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="itemWebsite" class="form-label">Threshold</label>
+        <input type="text" id="itemThreshold" name="threshold" class="form-control" [(ngModel)]="currentItem.threshold">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="itemGroup" class="form-label">Group</label>
+        <input type="text" id="itemGroup" name="group" class="form-control" [(ngModel)]="currentItem.productGroup">
+      </fieldset>
+
+    </div>
+
+    <div class="right-side">
+      <fieldset class="form-group">
+        <label for="itemName" class="form-label">Itemname</label>
+        <input type="text" id="itemName" name="name" class="form-control" [(ngModel)]="currentItem.name">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="itemPrice" class="form-label">Price</label>
+        <input type="text" id="itemPrice" name="price" class="form-control" [(ngModel)]="currentItem.price">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="itemWebsite" class="form-label">Website</label>
+        <input type="text" id="itemWebsite" name="website" class="form-control" [(ngModel)]="currentItem.website">
+      </fieldset>
+    </div>
+
+</form>
+
+<div class="button-wrapper">
+  <button class="btn btn-secondary" (click)="getInformation()">Get Information</button>
+  <button class="btn btn-secondary" (click)="createItem()">Create Item</button>
+</div>
+
+</div>

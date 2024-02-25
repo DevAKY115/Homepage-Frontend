@@ -12,6 +12,7 @@ import {HiraganaComponent} from "./japanese/hiragana/hiragana.component";
 import {MenuComponent} from "./japanese/menu/menu.component";
 import {KatakanaComponent} from "./japanese/katakana/katakana.component";
 import {ItemListComponent} from "./item-list/item-list.component";
+import {AddItemComponent} from "./item-list/add-item/add-item.component";
 
 const routes: Routes = [
   {path: "", component: BookmarksComponent},
@@ -29,7 +30,7 @@ const routes: Routes = [
   {path: "japanese/hiragana", component: HiraganaComponent},
   {path: "japanese/katakana", component: KatakanaComponent},
   {path: "itemlist", component: ItemListComponent},
-  {path: "itemlist/:id", component: ItemListComponent}
+  {path: "itemlist/:id", component: AddItemComponent}
 
 ];
 

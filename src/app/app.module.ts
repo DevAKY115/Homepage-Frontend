@@ -21,6 +21,7 @@ import { MenuComponent } from './japanese/menu/menu.component';
 import { KatakanaComponent } from './japanese/katakana/katakana.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ItemListComponent } from './item-list/item-list.component';
+import { AddItemComponent } from './item-list/add-item/add-item.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ItemListComponent } from './item-list/item-list.component';
     HiraganaComponent,
     MenuComponent,
     KatakanaComponent,
-    ItemListComponent
+    ItemListComponent,
+    AddItemComponent
   ],
     imports: [
         BrowserModule,
